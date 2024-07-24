@@ -4,7 +4,9 @@
   "description": "An Express.js server to showcase how to send emails thanks to the backend.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "clear && nodemon app.js"
   },
   "repository": {
     "type": "git",
