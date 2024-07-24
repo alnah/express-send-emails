@@ -3,6 +3,7 @@ require("express-async-errors");
 const express = require("express");
 
 const { errorHandler, routeNotFound } = require("./middlewares");
+const { sendEmail } = require("./controllers/sendEmail");
 
 // express server
 const app = express();
@@ -13,8 +14,11 @@ app.use(express.json());
 
 // root route
 app.get("/", (req, res) => {
-  res.send("<h1>Express Send Emails</h1>");
+  res.send("<h1>Express Send Emails<br><a href='/send'>Send Email</a></h1>");
 });
+
+// email route
+app.get("/send", sendEmail);
 
 // error handling
 app.use(routeNotFound);
