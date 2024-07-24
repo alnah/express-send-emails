@@ -1,0 +1,15 @@
+{
+  "name": "express-send-emails",
+  "version": "1.0.0",
+  "description": "An Express.js server to showcase how to send emails thanks to the backend.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "express-send-emails"
+  },
+  "author": "alnah <alexis.nahan@gmail.com>",
+  "license": "MIT"
+}
